@@ -1,0 +1,6 @@
+@EmprestimoDeLivros.API_HostAddress = http://localhost:5117
+
+GET {{EmprestimoDeLivros.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
