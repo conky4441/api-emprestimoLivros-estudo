@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\EmprestimoDeLivros.API.props" />
+</Project>
