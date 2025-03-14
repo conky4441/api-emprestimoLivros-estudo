@@ -15,23 +15,23 @@ public partial class LivroClienteEmprestimo
     [Column("id")]
     public int Id { get; set; }
 
-    [Column("idLivro")]
-    public int IdLivro { get; set; }
+    public int LecIdLivro { get; set; }
 
-    [Column("idCliente")]
-    public int IdCliente { get; set; }
+    public int LecIdCliente { get; set; }
 
-    [Column("dataEmprestimo", TypeName = "datetime")]
-    public DateTime DataEmprestimo { get; set; }
+    [Column(TypeName = "datetime")]
+    public DateTime LecDataEmprestimo { get; set; }
 
-    [Column("dataDevolução", TypeName = "datetime")]
-    public DateTime DataDevolução { get; set; }
+    [Column(TypeName = "datetime")]
+    public DateTime LecDataEntrega { get; set; }
 
-    [ForeignKey("IdCliente")]
+    public bool LecDataEntregue { get; set; }
+
+    [ForeignKey("LecIdCliente")]
     [InverseProperty("LivroClienteEmprestimo")]
-    public virtual Cliente IdClienteNavigation { get; set; }
+    public virtual Cliente LecIdClienteNavigation { get; set; }
 
-    [ForeignKey("IdLivro")]
+    [ForeignKey("LecIdLivro")]
     [InverseProperty("LivroClienteEmprestimo")]
-    public virtual Livro IdLivroNavigation { get; set; }
+    public virtual Livro LecIdLivroNavigation { get; set; }
 }

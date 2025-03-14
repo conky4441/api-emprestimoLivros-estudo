@@ -15,23 +15,32 @@ public partial class Livro
     public int Id { get; set; }
 
     [Required]
-    [Column("nome")]
+    [Column("livroNome")]
     [StringLength(50)]
     [Unicode(false)]
-    public string Nome { get; set; }
+    public string LivroNome { get; set; }
 
     [Required]
-    [Column("autor")]
+    [Column("livroAutor")]
+    [StringLength(200)]
+    [Unicode(false)]
+    public string LivroAutor { get; set; }
+
+    [Required]
+    [Column("livroEditora")]
     [StringLength(100)]
     [Unicode(false)]
-    public string Autor { get; set; }
+    public string LivroEditora { get; set; }
+
+    [Column("livroAnoPublicacao", TypeName = "datetime")]
+    public DateTime LivroAnoPublicacao { get; set; }
 
     [Required]
-    [Column("editora")]
+    [Column("livroEdicao")]
     [StringLength(50)]
     [Unicode(false)]
-    public string Editora { get; set; }
+    public string LivroEdicao { get; set; }
 
-    [InverseProperty("IdLivroNavigation")]
+    [InverseProperty("LecIdLivroNavigation")]
     public virtual ICollection<LivroClienteEmprestimo> LivroClienteEmprestimo { get; set; } = new List<LivroClienteEmprestimo>();
 }

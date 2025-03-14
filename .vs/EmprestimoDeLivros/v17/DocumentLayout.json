@@ -57,7 +57,8 @@
               "RelativeToolTip": "EmprestimoDeLivros.API\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:07:58.86Z"
+              "WhenOpened": "2025-03-13T21:07:58.86Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -69,7 +70,8 @@
               "RelativeToolTip": "EmprestimoDeLivros.API\\WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T22:02:13.757Z"
+              "WhenOpened": "2025-03-13T22:02:13.757Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -103,7 +105,7 @@
               "RelativeDocumentMoniker": "EmprestimoDeLivros.API\\Models\\ControleEmprestimoLivroContext.cs",
               "ToolTip": "D:\\Portifolio\\Projetos C#\\Projetos DotNet\\Api-Dotnet8\\EmprestimoDeLivros\\EmprestimoDeLivros.API\\Models\\ControleEmprestimoLivroContext.cs",
               "RelativeToolTip": "EmprestimoDeLivros.API\\Models\\ControleEmprestimoLivroContext.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-14T04:05:04.515Z",
               "EditorCaption": ""
@@ -116,7 +118,7 @@
               "RelativeDocumentMoniker": "EmprestimoDeLivros.API\\Models\\Cliente.cs",
               "ToolTip": "D:\\Portifolio\\Projetos C#\\Projetos DotNet\\Api-Dotnet8\\EmprestimoDeLivros\\EmprestimoDeLivros.API\\Models\\Cliente.cs",
               "RelativeToolTip": "EmprestimoDeLivros.API\\Models\\Cliente.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-14T04:07:28.07Z",
               "EditorCaption": ""

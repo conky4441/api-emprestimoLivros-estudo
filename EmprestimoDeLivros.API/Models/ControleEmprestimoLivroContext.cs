@@ -35,11 +35,11 @@ public partial class ControleEmprestimoLivroContext : DbContext
         {
             entity.Property(e => e.Id).ValueGeneratedNever();
 
-            entity.HasOne(d => d.IdClienteNavigation).WithMany(p => p.LivroClienteEmprestimo)
+            entity.HasOne(d => d.LecIdClienteNavigation).WithMany(p => p.LivroClienteEmprestimo)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Livro_Cliente_Emprestimo_Cliente");
 
-            entity.HasOne(d => d.IdLivroNavigation).WithMany(p => p.LivroClienteEmprestimo)
+            entity.HasOne(d => d.LecIdLivroNavigation).WithMany(p => p.LivroClienteEmprestimo)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Livro_Cliente_Emprestimo_Livro");
         });

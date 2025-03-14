@@ -15,35 +15,53 @@ public partial class Cliente
     public int Id { get; set; }
 
     [Required]
-    [Column("CPF")]
+    [Column("cliCPF")]
     [StringLength(14)]
     [Unicode(false)]
-    public string Cpf { get; set; }
+    public string CliCpf { get; set; }
 
     [Required]
-    [Column("nome")]
+    [Column("cliNome")]
+    [StringLength(200)]
+    [Unicode(false)]
+    public string CliNome { get; set; }
+
+    [Required]
+    [Column("cliEndereco")]
+    [StringLength(200)]
+    [Unicode(false)]
+    public string CliEndereco { get; set; }
+
+    [Required]
+    [Column("cliCidade")]
     [StringLength(100)]
     [Unicode(false)]
-    public string Nome { get; set; }
+    public string CliCidade { get; set; }
 
     [Required]
-    [Column("endereco")]
-    [StringLength(50)]
+    [Column("cliBairro")]
+    [StringLength(100)]
     [Unicode(false)]
-    public string Endereco { get; set; }
+    public string CliBairro { get; set; }
 
     [Required]
-    [Column("cidade")]
+    [Column("cliNumero")]
     [StringLength(50)]
     [Unicode(false)]
-    public string Cidade { get; set; }
+    public string CliNumero { get; set; }
 
     [Required]
-    [Column("bairro")]
-    [StringLength(50)]
+    [Column("cliTelefoneCelular")]
+    [StringLength(14)]
     [Unicode(false)]
-    public string Bairro { get; set; }
+    public string CliTelefoneCelular { get; set; }
 
-    [InverseProperty("IdClienteNavigation")]
+    [Required]
+    [Column("cliTelefoneFixo")]
+    [StringLength(13)]
+    [Unicode(false)]
+    public string CliTelefoneFixo { get; set; }
+
+    [InverseProperty("LecIdClienteNavigation")]
     public virtual ICollection<LivroClienteEmprestimo> LivroClienteEmprestimo { get; set; } = new List<LivroClienteEmprestimo>();
 }
